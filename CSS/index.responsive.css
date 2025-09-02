@@ -1,0 +1,50 @@
+@media (max-width: 1300px) {
+    #Registration .box{
+        width: 290px;
+    }
+    #Filtration .input{
+        width: 250px;
+    }
+    #Filtration table{
+        min-width: max-content;
+    }
+    .modal .box{
+        width: 300px;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    .modal .box{
+        width: 330px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    #Registration .box{
+        width: 350px;
+    }
+    #Filtration .input{
+        width: 300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    #Registration .box{
+        width: 400px;
+    }
+    .modal .box{
+        width: 400px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    #Registration .box{
+        width: 500px;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+    .modal .box{
+        width: 450px;
+    }
+}

@@ -1,0 +1,61 @@
+body{
+    background: #141e30;
+    background: -webkit-linear-gradient(to right,#243b55,#141e30);
+    background: linear-gradient(to right, #243b55, #141e30);
+}
+
+#Registration img{
+    width: 15%;
+}
+#Registration .box{
+    background: #ada996;
+    background: -webkit-linear-gradient(to right,#eaeaea,#dbdbdb,#f2f2f2,#ada996);
+    background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+    border-radius: 20px;
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+#Registration .box h4,
+section i{
+    color: #ba944d;
+}
+#Registration .box .reset{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #ba944d;
+    /* left: 100%; */
+}
+
+#Filtration .input{
+    width: 300px;
+    margin-inline: auto;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .3s;
+}
+.modal .box{
+    width: 450px;
+    margin: auto;
+}
+.modal .box i{
+    cursor: pointer;
+}
+.closed{
+    opacity: 0;
+    z-index: -1;
+}
+.animate{
+    animation: animate .5s;
+}

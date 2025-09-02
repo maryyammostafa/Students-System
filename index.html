@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students-System</title>
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/keyframes.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/index.responsive.css">
+</head>
+<body>
+
+    <section id="Registration" class="py-5">
+        <div class="container">
+            <div class="image text-center">
+                <img src="./Images/logo.png" class="img-fluid mb-5" alt="">
+            </div>
+            <div class="box">
+                <h4 class="text-center pt-4">Students System</h4>
+                <button class="btn reset d-none" onclick="resetForm()">Reset <i class="fa-solid fa-rotate-left"></i></button>
+                <form autocomplete="off" class="p-4" data-type="add">
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" class="form-control" name="firstName" placeholder="First Name *" required>
+                        <p class="alert text-danger w-100 m-0 ms-2 mt-2 p-0 d-none"></p>
+                    </div>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" class="form-control" name="lastName" placeholder="Last Name *" required>
+                        <p class="alert text-danger w-100 m-0 ms-2 mt-2 p-0 d-none"></p>
+                    </div>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" class="form-control" name="email" placeholder="Email *" required>
+                        <p class="alert text-danger w-100 m-0 ms-2 mt-2 p-0 d-none"></p>
+                    </div>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><i class="fa-solid fa-hashtag"></i></span>
+                        <input type="text" class="form-control" name="age" placeholder="Age *" required>
+                        <p class="alert text-danger w-100 m-0 ms-2 mt-2 p-0 d-none"></p>
+                    </div>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+                        <input type="text" class="form-control" name="phone" placeholder="Phone *" required>
+                        <p class="alert text-danger w-100 m-0 ms-2 mt-2 p-0 d-none"></p>
+                    </div>
+                    <button class="btn btn-success w-100">Add</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="Filtration" class="pb-5">
+        <div class="container">
+            <div class="input-group input mb-5">
+                <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control" placeholder="Search...">
+            </div>
+            <div class="alert alert-warning text-center warning d-none">
+                <p class="m-0 fs-5">There are no data</p>
+            </div>
+            <div class="cover overflow-auto">
+            <table class="table rounded overflow-hidden m-auto">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Option</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delete Modal -->
+    <div class="deleteModal modal closed">
+        <div class="container">
+            <div class="box text-light bg-dark p-3 p-md-4 rounded">
+                <div class="header d-flex justify-content-between">
+                    <h3>Delete</h3>
+                    <i class="fa-solid fa-xmark fs-4 align-content-center close" onclick="closeModal(this)"></i>
+                </div>
+                <div class="content my-4">
+                    <p class="fs-6">Are you sure?</p>
+                </div>
+                <div class="buttons d-flex justify-content-end">
+                    <button class="btn btn-secondary me-2 cancel" onclick="closeModal(this)">Cancel</button>
+                    <button class="btn btn-danger delete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Modal -->
+    <div class="editModal modal closed">
+        <div class="container">
+            <div class="box text-light bg-dark p-3 p-md-4 rounded">
+                <div class="header d-flex justify-content-between">
+                    <h3>Edit</h3>
+                    <i class="fa-solid fa-xmark fs-4 align-content-center close" onclick="closeModal(this)"></i>
+                </div>
+                <div class="content my-4">
+                    <p class="fs-6">Do you want to save changes?</p>
+                </div>
+                <div class="buttons d-flex justify-content-end">
+                    <button class="btn btn-secondary me-2 cancel" onclick="closeModal(this)">Cancel</button>
+                    <button class="btn btn-info text-light save">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/globalFunctions.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html>
