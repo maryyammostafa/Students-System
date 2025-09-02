@@ -2,6 +2,10 @@
     #Registration .box{
         width: 290px;
     }
+    #Registration .box .reset{
+        top: 0;
+        right: 0;
+    }
     #Filtration .input{
         width: 250px;
     }
@@ -23,6 +27,10 @@
     #Registration .box{
         width: 350px;
     }
+    #Registration .box .reset{
+        top: 20px;
+        right: 5px;
+    }
     #Filtration .input{
         width: 300px;
     }
@@ -31,6 +39,10 @@
 @media (min-width: 769px) and (max-width: 1300px) {
     #Registration .box{
         width: 400px;
+    }
+    #Registration .box .reset{
+        top: 20px;
+        right: 10px;
     }
     .modal .box{
         width: 400px;
